@@ -1,0 +1,219 @@
+body{
+    background-image: url("https://wallpapers.com/images/hd/mysterious-1972-x-1024-wallpaper-gdrrzmhlqfvdi03r.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    user-select: none;
+}
+h1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 80px;
+    color: green;
+}
+h2{
+    display: flex;
+    justify-content: center;
+    color: royalblue;
+    text-shadow: 2px 2px 5px gold;
+}
+h3{
+    display: flex;
+    justify-content: center;
+    color: red;
+    text-shadow: 2px 2px 5px gold;
+}
+img{
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+#trollHPHUD{
+    display: flex;
+    align-items: center;
+}
+
+#trollHPBar{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 80%;
+    height: 20px;
+    border-radius: 5px;
+}
+
+#trollHPBar::-webkit-progress-bar {
+    background-color: white;
+    border-radius: 5px;
+}
+
+#trollHPBar::-webkit-progress-value {
+    background-color: red;
+    border-radius: 5px;
+}
+#playerHPBar{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 250px;
+    height: 20px;
+    border-radius: 5px;
+}
+
+#playerHPBar::-webkit-progress-bar {
+    background-color: white;
+    border-radius: 5px;
+}
+
+#playerHPBar::-webkit-progress-value {
+    background-color: red;
+    border-radius: 5px;
+}
+#playerStaminaBar{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 200px;
+    height: 20px;
+    border-radius: 5px;
+}
+
+#playerStaminaBar::-webkit-progress-bar {
+    background-color: white;
+    border-radius: 5px;
+}
+
+#playerStaminaBar::-webkit-progress-value {
+    background-color: green;
+    border-radius: 5px;
+}
+#staminaHUD{
+    position: absolute;
+    top: 220px;
+    left: 100px;
+}
+#maxStaminaHUD{
+    position: absolute;
+    top: 260px;
+    left: 100px;
+}
+#playerHPHUD{
+    position: absolute;
+    top: 140px;
+    left: 100px;
+}
+#weaponHUD{
+    position: absolute;
+    top: 305px;
+    left: 100px;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+} 
+
+.infoHUD{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+button{
+    height: 35px;
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 15px;
+    
+}
+button:hover{
+    scale: 120%;
+}
+#hammerButton{
+    position: absolute;
+    top: 340px;
+    left: 100px;
+}
+#axeButton{
+    position: absolute;
+    top: 400px;
+    left: 100px;
+}
+#sawButton{
+    position: absolute;
+    top: 460px;
+    left: 100px;
+}
+#berryHUD{
+    position: absolute;
+    top: 340px;
+    right: 100px;
+}
+#meatHUD{
+    position: absolute;
+    top: 400px;
+    right: 100px;
+}
+#mealHUD{
+    position: absolute;
+    top: 460px;
+    right: 100px;
+}
+#coinsHUD{
+    position: absolute;
+    top: 200px;
+    right: 100px;
+    color: gold;
+}
+#potionHUD{
+    position: absolute;
+    top: 550px;
+    right: 100px;
+}
+#attackButton{
+    position: absolute;
+    top: 200px;
+    left: 100px;
+}
+#restartButton{
+    position: absolute;
+    align-self: center;
+}
+#spill{
+    color: red;
+    text-shadow: 2px 2px 4px royalblue;
+}
+input{
+    width: 200px;
+    display: flex;
+    align-self: center; 
+}
+
+.combatWonWindow, .nextRoundselectWindow, .campRestWindow{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    
+}
+
+.shopItemsIMG{
+    height: 200px;
+    width: 200px;
+}
+
+#strRing, #maxHPArmor, #speedBoots{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    padding: 40px;
+}
+#shopContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+}
