@@ -1,0 +1,75 @@
+function updateView(){ 
+    document.getElementById("spill").innerHTML = /*HTML*/`
+    <h2>Velkommen ${playerName}</h2>
+    <br>
+    <h3>Stage: ${stageNumber}</h3>
+    <br>
+    <p id="trollHPHUD" class="infoHUD"><img class="img" src="troll.jpg">TrollHP: ${trollHP} </p>
+    <p id="coinsHUD" class="infoHUD">Coins: ${coins} <button id="coinButton" onclick="pickUpCoins()">Pick up Coins</button></p>
+    <p id="staminaHUD" class="infoHUD">Stamina: ${stamina}</p>
+    <p id="maxStaminaHUD" class="infoHUD">Max Stamina: ${maxStamina}</p>
+    <p id="staminaCostHUD" class="infoHUD">Stamina Cost: ${staminaCost}</p>
+    <p id="strengthHUD" class="infoHUD">Strength: ${strength}</p>
+    <p id="weaponHUD" class="infoHUD">Weapon: ${weapon}</p>
+    <p id="berryHUD" class="infoHUD">Berry: ${berries} <button id="berryButton" class="eatFoodButton" onclick="eatFood('Berry', 10)">Eat Berry +10</button></p>
+    <p id="meatHUD" class="infoHUD">Meat: ${meats} <button id="meatButton" class="eatFoodButton" onclick="eatMeat('Meat', 25)">Eat Meat +25</button></p>
+    <p id="mealHUD" class="infoHUD">Big Meal: ${bigMeals} <button id="mealButton" class="eatFoodButton" onclick="eatMeal('BigMeal', 50)">Eat Big Meal +50</button></p>
+
+    <button id="attackButton" onclick="hitTroll()">Attack</button>
+
+    <button id="hammerButton" class="weaponPickUp" onclick="pickUpWeapon('Hammer', 20, 3)">Pick up Hammer +20str Stam cost 3</button>
+    <button id="axeButton" class="weaponPickUp" onclick="pickUpWeapon('Axe', 50, 5)">Pick up Axe +50str Stam cost 5</button>
+    <button id="sawButton" class="weaponPickUp" onclick="pickUpWeapon('Chainsaw', 150, 15)">Pick up Chainsaw +150str Stam cost 15</button>
+    `
+       /* document.getElementById("myInput").style.visibility = "hidden";
+        document.getElementById("start").style.visibility = "hidden"; */
+    
+}
+
+function hideButton(){
+    if(buyButtonStrRing == true){
+        document.getElementById("strRing").style.visibility = 'hidden';
+    }
+    else if(buyButtonStrRing == false){
+        document.getElementById("strRing").style.visibility = 'visible';
+    }
+
+    if(buyButtonHPArmor == true){
+        document.getElementById("maxHPArmor").style.visibility = 'hidden';
+    }
+    else if(buyButtonHPArmor == false){
+        document.getElementById("maxHPArmor").style.visibility = 'visible';
+    }
+
+    if(buyButtonSpeedBoots == true){
+        document.getElementById("speedBoots").style.visibility = 'hidden';
+    }
+    else if(buyButtonSpeedBoots == false){
+        document.getElementById("speedBoots").style.visibility = 'visible';
+    }
+}
+
+inline if check
+ style="visibility:${variablename ? 'hidden' : 'visible'};
+
+ <div id="berriesContainer">
+                    <button>-</button>
+                    <button>BUY</button>
+                    <button>+</button>
+                </div>
+                <div id="meatContainer">
+                    <button>-</button>
+                    <button>BUY</button>
+                    <button>+</button>
+                </div>
+                <div id="mealContainer">
+                    <button>-</button>
+                    <button>BUY</button>
+                    <button>+</button>
+                </div>
+
+                //   let potionPrice = 150;
+//   let rawMeatPrice = 70;
+//   let bigMealPrice = 120;
+//   let berryPrice = 10;
+
